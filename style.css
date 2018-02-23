@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    width: 1155px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 25px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.logo {
+    width: 12%;
+}
+
+.head-adress {
+    display: flex;
+    width: 43%;
+    font-size: 17px;
+    font-family: 'GothamPro-Light', sans-serif;
+}
+
+.head-adress a {
+    color: #fdc20f;
+    text-decoration: none;
+}
+
+.head-adress-left {
+    border-right: 1px solid #fdc20f;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.head-adress-right {
+    border-right: 1px solid #fdc20f;
+    width: 40%;
+}
+
+.head-phone {
+    font-family: 'BebasNeueBold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+header button {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'BebasNeueBold', sans-serif;
+    padding: 15px;
+    background-color: #fdc20f;
+    border: none;
+    border-radius: 3px;
+}
+
+/* СЕКЦИЯ ТОП МЕНЮ */
+
+section.top-menu {
+    height: 100%;
+}
+
+.top-menu-wrap {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfdfdf+0,d5d5d5+100 */
+    background: #dfdfdf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dfdfdf 0%, #d5d5d5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #dfdfdf 0%,#d5d5d5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #dfdfdf 0%,#d5d5d5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#d5d5d5',GradientType=0 ); /* IE6-9 */
+}
+
+.top-menu-wrap ul {
+    list-style-type: none;
+    display: flex;
+    font-family: 'GothamPro', sans-serif;
+    font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top-menu-wrap a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    transition: .3s ease;
+}
+
+.top-menu-wrap a:hover {
+    background-color: rgb(210, 208, 208);
+}
+
+/* СЕКЦИЯ ТОП СЛАЙДЕР */
+
+section.top-slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slider-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    outline: none;
+}
+
+.slide img {
+    margin: 0 auto;
+}
+
+.slider-wrapper .slick-prev {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fdc20f;
+    font-size: 18px;
+    font-weight: 100;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fdc20f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: -7px;
+    left: -65px;
+}
+
+.slider-wrapper .slick-next {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fdc20f;
+    font-size: 18px;
+    font-weight: 100;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fdc20f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: -7px;
+    right: -65px;
+}
+
+/* СЕКЦИЯ ОТЗЫВЫ */
+
+section.reviews {
+    position: relative;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #fdc20f;
+}
+
+.section-title {
+    display: block;
+    padding: 15px;
+    width: 10%;
+    position: absolute;
+    top: -28px;
+    left: 80px;
+    background-color: #fff;
+    font-family: 'BebasNeueBold', sans-serif;
+    text-align: center;
+}
+
+.reviews-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.review-cell {
+    width: 49%;
+}
+
+.review-client {
+    display: flex;
+    min-height: 400px;
+}
+
+.review-client img {
+    width: 40%;
+    height: 210px;
+    margin-right: 25px;
+}
+
+.review-cell .client-text {
+    width: 58%;
+}
+
+.client-text h3 {
+    font-family: 'BebasNeueBold', sans-serif;
+    text-transform: uppercase;
+}
+
+.client-text p {
+    font-family: 'GothamPro-Light', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.data {
+    color: rgb(181, 181, 181);
+    font-style: italic;
+}
+
+.client-text a {
+    font-family: 'GothamPro-Light', sans-serif;
+    text-decoration: none;
+    color: #fdc20f;
+    line-height: 30px;
+}
+
+
+/* СЕКЦИЯ НОВОСТИ */
+
+section.news {
+    position: relative;
+    padding-top: 70px;
+}
+
+.news-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-cell {
+    width: 49%;
+}
+
+.news-block {
+    display: flex;
+    margin-bottom: 47px;
+}
+
+.img {
+    width: 40%;
+    height: 210px;
+    margin-right: 25px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-block .client-text {
+    width: 58%;
+}
+
+.border {
+    width: 85%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fdc20f;
+}
+
+.news-cell .news-block:nth-child(2) .img {
+    background-position: 20% 50%;
+}
+
+/* БОТТОМ МЕНЮ */
+
+section.bottom-menu {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#767575+0,6e6d6d+49,676666+100 */
+    background: #767575; /* Old browsers */
+    background: -moz-linear-gradient(top,  #767575 0%, #6e6d6d 49%, #676666 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #767575 0%,#6e6d6d 49%,#676666 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #767575 0%,#6e6d6d 49%,#676666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767575', endColorstr='#676666',GradientType=0 ); /* IE6-9 */
+}
+
+.bottom-menu-wrap ul {
+    list-style-type: none;
+    display: flex;
+    font-family: 'GothamPro', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.bottom-menu-wrap ul a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    transition: .3s ease;
+    color: #fff;
+    border-right: 1px solid rgba(118, 118, 118, 0);
+    border-left: 1px solid rgba(83, 83, 83, 0);
+}
+
+.bottom-menu-wrap ul a:hover {
+    background-color: rgb(94, 94, 94);
+    border-right: 1px solid rgb(118, 118, 118);
+    border-left: 1px solid rgb(83, 83, 83);
+    transition: .3s ease;
+}
+
+/* ФУТЕР */
+
+footer {
+    background-color: rgb(81, 81, 81);
+    padding: 70px 0;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 18%;
+}
+
+.footer-desc {
+    width: 80%;
+}
+
+.footer-desc .foot-row:nth-child(2) {
+    margin-top: 30px;
+}
+
+.foot-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-cell {
+    color: #fff;
+    padding-right: 29px;
+    border-right: 1px solid #fff;
+    font-family: 'GothamPro', sans-serif;
+    font-size: 17px;
+}
+
+.social {
+    border: none;
+}
+
+.under-text {
+    width: 72%;
+    color: #fff;
+    font-family: 'GothamPro', sans-serif;
+    font-size: 10px;
+}
+
+.under-text p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.gold-code {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(211, 102, 36);
+}
+
+.gold-code img {
+    margin-right: 10px;
+}
